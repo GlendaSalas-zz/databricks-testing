@@ -13,7 +13,7 @@ print('Remote blob path: ' + wasbs_path)
 # COMMAND ----------
 
 df = spark.read.parquet(wasbs_path)
-print('Register the DataFrame as a SQL temporary view: source')
+print('Register the DataFrame as a SQL temporary view: source, this is a change')
 df.createOrReplaceTempView('source')
 
 # COMMAND ----------
