@@ -18,5 +18,5 @@ df.createOrReplaceTempView('source')
 
 # COMMAND ----------
 
-print('Displaying top 10 rows: ')
-display(spark.sql('SELECT * FROM source LIMIT 10'))
+print('Displaying top 5 rows: ')
+display(spark.sql('SELECT * FROM source LIMIT 5'))
